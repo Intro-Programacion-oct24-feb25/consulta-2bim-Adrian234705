@@ -1,0 +1,18 @@
+def factorial(n):
+  """
+  Calcula el factorial de un número entero no negativo de forma recursiva.
+
+  Args:
+    n: El número entero no negativo.
+
+  Returns:
+    El factorial de n.
+  """
+  if n == 0:  # Caso base
+    return 1
+  else:  # Caso recursivo
+    return n * factorial(n - 1)
+
+# Ejemplo de uso
+resultado = factorial(5)
+print(f"El factorial de 5 es: {resultado}")  # Imprime: El factorial de 5 es: 120
